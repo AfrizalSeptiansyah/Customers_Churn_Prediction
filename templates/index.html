@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Churn Prediction</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/" method="POST">
+            <span class="contact100-form-title">
+                Customers Churn Prediction 
+            </span>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Total Day Charge</span>
+                <input class="input100" type="text" placeholder="Total Charge of Daily Calls *Example:24" name="total_day_charge" id="total_day_charge" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="form-group">
+                <span class="label-input150">Have Number Customers Service Calls</span>
+                <select class="form-control" id="number_customer_service_calls" name="number_customer_service_calls">
+                    <option>yes</option>
+                    <option>no</option>
+                </select>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Total Evening Minutes</span>
+                <input class="input100" type="text" placeholder="Total Minute Evening Calls *Example:132" name="total_eve_minutes" id="total_eve_minutes" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Number V-mail Messages</span>
+                <input class="input100" type="text" placeholder="Number Voice Mail Messages *Example:14" name="number_vmail_messages" id="number_vmail_messages" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Total International Calls</span>
+                <input class="input100" type="text" placeholder="Total International Calls *Example:2" name="total_intl_calls" id="total_intl_calls" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Total Min International Calls</span>
+                <input class="input100" type="text" placeholder="Total Min International Calls *Example:24" name="total_intl_minutes" id="total_intl_minutes" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" >
+                <span class="label-input150">Total Night Minutes</span>
+                <input class="input100" type="text" placeholder="Total Minute Night Calls *Example:200" name="total_night_minutes" id="total_night_minutes" required>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="form-group">
+                <span class="label-input150">International Plan</span>
+                <select class="form-control" id="international_plan" name="international_plan">
+                    <option>yes</option>
+                    <option>no</option>
+                </select>
+            </div>
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            Predict
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
