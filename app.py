@@ -12,7 +12,6 @@ def index():
     else:
         data = request.form.to_dict()
         X_test = pd.DataFrame([data])
-        X_test.number_customer_service_calls = X_test.number_customer_service_calls.map({'no': 0, 'yes': 1})
         hasil = model.predict(X_test)
         return render_template('hasil.html', FinalData=hasil)
 
