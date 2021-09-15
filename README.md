@@ -26,7 +26,7 @@ conda install -c conda-forge xgboost
 ## Baseline 
 I created a baseline using automl to assess the feasibility of the data. I use the f1 score as a metric considering there are imbalance case.
 
-![label distribution](https://github.com/AfrizalSeptiansyah/Costumers_Churn_Prediction/blob/main/asset/result_prophet.png?raw=true)
+![label_distribution](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/label.png?raw=true)
 
 
 ## Exploratory Data Analysis 
@@ -39,15 +39,19 @@ I use XGBoost as a predictive model with the following steps:
 * I did hyperparameter tuning on XGBoost using RandomSearchCV with 5 cross validation.
 * After training the model, I visualized the important features and selected the 8 most important features. After that, I retrained the model and added polynomials to improve accuracy.
 
-Gambar 
+![features_important](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/features_important.png?raw=true)
+
 
 ## Evaluation 
 
-Classification report 
+### Classification Report 
+![classification_report](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/classification_report.PNG?raw=true)
 
-Confusion matrix 
+### Roc Auc 
+![roc_auc](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/roc_auc.png?raw=true)
 
-Roc Auc 
+### Confusion Matrix 
+![confusion_matrix](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/confusion_,matrix.png?raw=true)
 
 
 ## Deployment 
@@ -57,8 +61,9 @@ Template Link : https://colorlib.com/wp/template/contact-form-v4/  <br>
 
 Demo Application : https://customers-churn-prediction-xgb.herokuapp.com/?
 
-gambar 
+![app](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/app.PNG?raw=true)
 
 # Conclusion
-sampaikan kesimpulan-kesimpulan penting dan jangan lupa tambahkan strategi bisnis 
+From all the steps that have been done I get an f1 score of 0.88. Managed to get 8 important features used to increase f1 score. At the last stage I deploy so that it can be used by users. So that we can carry out marketing strategies if there are customers who are predicted to leave our services.
 
+Thank you for reading :)
