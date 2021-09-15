@@ -24,7 +24,7 @@ conda install -c conda-forge xgboost
 # Step By Step Solve Problem 
 
 ## Baseline 
-I created a baseline using automl to assess the feasibility of the data. I use the f1 score as a metric considering there are imbalance case.
+I created a baseline using automl to assess the feasibility of the data. I use the f1 score as a metric considering there are imbalance case. I use class weight to fix it. 
 
 ![label_distribution](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/label.png?raw=true)
 
