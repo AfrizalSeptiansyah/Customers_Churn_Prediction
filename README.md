@@ -30,8 +30,9 @@ I created a baseline using automl to assess the feasibility of the data. I use t
 
 
 ## Exploratory Data Analysis 
-I do exploratory data analysis of all numeric and categorical features to gain insight of data. 
+I do exploratory data analysis of all numerical and categorical features to gain insight into the data. Example of exploratory data analysis:
 
+![EDA](https://github.com/AfrizalSeptiansyah/Customers_Churn_Prediction/blob/main/asset/EDA.PNG?raw=true)
 
 ## Build Model 
 I use XGBoost as a predictive model with the following steps:
